@@ -1,0 +1,18 @@
+<!--ベーステンプレートを適用する-->
+{% extends 'base.html' %}
+<!--ヘッダー情報のページタイトルを設定する-->
+{% block title %}Registration Complete{% endblock %}
+    {% block contents %}
+    <!--Bootstrapのグリッドシステム-->
+    <div class="container">
+        <div class="row">
+            <!--列の左右に余裕offset-4
+                列の上下パディングはpy-4-->
+            <div class="col offset-4 py-4">
+                <h3>登録が完了しました</h3>
+                <!--ログインページのリンクテキスト-->
+                <p><a href="{% url 'accounts:login' %}">ログインはこちら</a></p>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
